@@ -1,0 +1,228 @@
+body{
+  font-family: Montserrat;
+  text-align: center; /* as it appears in te every section of the .css file */
+}
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Montserrat-bold";
+}
+
+
+p{
+  color: #8f8f8f;
+}
+
+                        /* HEADING */
+.big-heading
+{
+  font-family: "Montserrat-Black";
+  font-size : 4rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.section-heading
+{
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+
+/* .container-fluid{
+  padding: 3% 15% 7%;  /* padding is done top 3% and left - right 15% and bottom 7%*/
+/* } */
+
+.container-fluid{
+  padding: 7% 15%;  /* padding is done top 3% and left - right 15% and bottom 7%*/
+}
+
+   /* navigation bar */
+.navbar{
+  padding: 0 0 4.5rem; /* 0 from top 0 from left right & 4.5 from bottom */
+}
+
+.navbar-brand{
+  font-family: Ubuntu;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-item{
+  padding: 0 18px;
+  font-weight: bold;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+}
+
+/*DOWNLOAD BUTTONS */
+.download-buttons{
+  margin: 5% 3% 5% 0;
+}
+
+                                /* TITLE */
+
+/* #title{
+  background-color: #ff4c68;
+  color: #fff;
+
+} */
+
+/* Title Image*/
+ .title-image{
+   width: 22%; /* make the width of te image to 60% of the actual image */
+   transform: rotate(25deg); /* roate the image to te right with 45 eg */
+   position: absolute;
+   right: 15%;
+ }
+
+#title .container-fluid  /* PROVIDE THE SPCACE AFTER WRITING #title, after #title given one space then .container-fluid   , we use #id. .partcular-effect_name , it tells that for specificaly for title part use this type of container*/
+{
+  padding: 3% 15% 7%;
+    text-align:left;  /* as heading element must appear just below the where the title TinDog is Written */
+}
+ /* Features Section */
+ #features{                 /* NOte that for id selector , we use the pound sign that the hash sign , but if we use the class then only we .with the class name */
+   /* padding: 7% 15%; /* top - bottom 7% left - right 15 % */
+   background-color: #fff;
+   position: relative;
+   /* z-index: 1; *//*we can keep z-index :1 also  no matter */
+ }
+
+ .feature-title{
+   font-size: 1.5rem;
+ }
+
+ /* TO ALIGN THE TEXT */
+
+ .feature-box{
+   padding: 4.5%;
+ }
+
+ .icon{
+   color:#ef8172;
+   margin-bottom: 1rem;
+ }
+
+
+/* To have the change color when we hover over the items , we use pseudo class  */
+
+.icon:hover{
+  color: #ff4c68;
+}
+
+/* Testimonials */
+
+#testimonials{
+  /*padding: 7% 15%; /* 7% TOP-BOTTOM  15% LEFT-right*/
+  /* text-align: center; */
+  background-color: #ef8172;
+  color: #fff;
+}
+
+/* .carousel-item{
+  padding: 7% 15%;    /* to have the padding so that the bottom are far apart*/
+/* } */
+
+.testimonial-image
+{
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.testimonial-text{
+  font-size: 3rem;
+  line-height: 1.5rem;
+}
+
+.press-logo{
+  width: 15%;
+  margin: 20px 20px 50px ; /* 20 px from top , 20 px from left right ,50px from bottomS*/
+}
+
+/* press */
+#press{
+  background-color: #ef8172;
+  /* text-align: center; */
+  padding: 3% ; /* to increase the coverage og the press part */
+}
+
+
+/* PRICING */
+
+#pricing{
+  padding: 100px;
+  /* text-align: center;  making the text to be appear in center */
+}
+
+.pricing-column{
+  padding: 3% 2%; /* 3% padding from top and bottom and 2% padding from left and right */
+}
+
+.price-text{
+
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+
+}
+
+
+/* used bcz dog image which is titled in desktop view gets cutoff in mobile view , thats why media query is used when max-size = 1028px , position becomes static */
+@media (max-width:1028px)
+{
+  #title{
+    text-align: center;
+  }
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+
+
+/*----------------------------------------------------------------------------------*/
+                    /* CTA */
+/* #cta{
+  background-color: #ff4c68;
+  /* padding: 7% 15%; */
+  /* color: #fff; */
+  /* text-align: center; */
+} */
+
+/* .cta-heading{
+
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+} */
+
+                                              /* FOOTER */
+#footer{
+  /* padding: 7% 15%; */
+  /* text-align: center; */
+  font-weight: bold;
+}
+.social-icon{
+  font-size: 1.2rem;
+  margin: 20px 10px;
+}
+
+
+
+/* SECTION */
+
+.colored-section{
+  background-color: #ff4c68;
+  color: #fff;
+}
+.white-section{
+  background-color: #fff;
+}
